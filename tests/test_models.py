@@ -76,7 +76,7 @@ def test_min_mag(test_df, test_colname, expected):
     assert min_mag(test_df, test_colname) == expected
 
 def test_max_mag_strings():
-    # Test for TypeError when passing a string
+    """ Test for TypeError when passing a string. """
     from lcanalyzer.models import max_mag
 
     test_input_colname = "b"
