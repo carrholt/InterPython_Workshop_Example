@@ -68,4 +68,5 @@ def normalize_lc(df,mag_col):
     min = min_mag(df,mag_col)
     max = max_mag((df-min),mag_col)
     lc = (df[mag_col]-min)/max
+    lc = lc.fillna(0)
     return lc
