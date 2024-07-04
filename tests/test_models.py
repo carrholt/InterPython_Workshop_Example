@@ -41,6 +41,12 @@ def test_max_mag(test_df, test_colname, expected):
                       columns=list("abc")),
         "b",
         0),
+        (pd.DataFrame(data=[[-7, -7, -3], 
+                            [-4, -3, -1], 
+                            [-1, -5, -3]], 
+                      columns=list("abc")),
+        "a",
+        -4),
     ])
 def test_mean_mag(test_df, test_colname, expected):
     """Test mean function works for array of zeroes and positive integers."""
